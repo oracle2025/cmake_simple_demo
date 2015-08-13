@@ -16,5 +16,7 @@ ExternalProject_Add(simple
 set(SIMPLE_LIBS ${PROJECT_BINARY_DIR}/lib/libsimple.a)
 include_directories(${PROJECT_BINARY_DIR}/include)
 
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+
 add_subdirectory(src)
 
