@@ -13,9 +13,7 @@ ExternalProject_Add(simple
 	INSTALL_DIR ${PROJECT_BINARY_DIR}
 	CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=<INSTALL_DIR>)
 
-#set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} ${PROJECT_BINARY_DIR}/simple-prefix/src/simple-build/lib/)
-
-#find_library(SIMPLE_LIBS simple)
+set(SIMPLE_LIBS ${PROJECT_BINARY_DIR}/lib/libsimple.a)
 include_directories(${PROJECT_BINARY_DIR}/include)
 
 add_subdirectory(src)
